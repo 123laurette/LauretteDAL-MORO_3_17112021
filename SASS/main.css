@@ -1,0 +1,18 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("roboto.eot");
+  src: url("roboto.eot?iefix") format("eot"), url("roboto.woff") format("woff"), url("roboto.ttf") format("truetype"), url("roboto.svg#webfont") format("svg");
+}
+
+.photo {
+  width: 1%;
+  height: 1%;
+}
+/*# sourceMappingURL=main.css.map */

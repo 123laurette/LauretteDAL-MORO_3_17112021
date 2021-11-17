@@ -1,0 +1,23 @@
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+$primaire: #9356DC;
+$secondaire: #FF79DA;
+$tertiaire: #99E2D0;
+@font-face{ 
+	font-family: 'Roboto';
+	src: url('roboto.eot');
+	src: url('roboto.eot?iefix') format('eot'),
+	     url('roboto.woff') format('woff'),
+	     url('roboto.ttf') format('truetype'),
+	     url('roboto.svg#webfont') format('svg');
+}
+.photo
+{
+    width: 1%;
+    height: 1%;
+}
