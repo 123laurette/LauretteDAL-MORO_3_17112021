@@ -1,23 +1,39 @@
+@import "./utils/variables";
+@import "./base/fondations.scss";
+@import "./layouts/header_footer.scss";
+@import "./layouts/menu.scss";
+@import "./pages/accueil.scss";
 
-*
+.restaurants
 {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+	display: flex;
+	width: 100%;
+	height: 1300px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
-$primaire: #9356DC;
-$secondaire: #FF79DA;
-$tertiaire: #99E2D0;
-@font-face{ 
-	font-family: 'Roboto';
-	src: url('roboto.eot');
-	src: url('roboto.eot?iefix') format('eot'),
-	     url('roboto.woff') format('woff'),
-	     url('roboto.ttf') format('truetype'),
-	     url('roboto.svg#webfont') format('svg');
-}
-.photo
+.carte
 {
-    width: 1%;
-    height: 1%;
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	border: green solid;
 }
+	.photo img
+	{
+		display: flex;
+		object-fit: cover;
+		width: 100%;
+		height: 200px;
+		border: red solid;
+	}
+	.description
+	{
+		display: flex;
+		width: 100%;
+		height: 80px;
+		flex-direction: column;
+		padding-left: 10px;
+		border: blue solid;
+	}
