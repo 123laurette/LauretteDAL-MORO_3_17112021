@@ -1,39 +1,5 @@
 @import "./utils/variables";
-@import "./base/fondations.scss";
-@import "./layouts/header_footer.scss";
-@import "./layouts/menu.scss";
-@import "./pages/accueil.scss";
-
-.restaurants
-{
-	display: flex;
-	width: 100%;
-	height: 1300px;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-.carte
-{
-	display: flex;
-	flex-direction: column;
-	width: 80%;
-	border: green solid;
-}
-	.photo img
-	{
-		display: flex;
-		object-fit: cover;
-		width: 100%;
-		height: 200px;
-		border: red solid;
-	}
-	.description
-	{
-		display: flex;
-		width: 100%;
-		height: 80px;
-		flex-direction: column;
-		padding-left: 10px;
-		border: blue solid;
-	}
+@import "./base/fondations";
+@import "./layouts/headeretfooter";
+@import "./layouts/menu";
+@import "./pages/accueil";

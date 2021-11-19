@@ -1,0 +1,163 @@
+/*.........1ere section............*/
+.suiteheader
+{
+    display: flex;
+    flex-direction: column;
+}
+	.rechercher
+	{
+    	display: flex;
+    	justify-content: center;
+    	width: 100%;
+    	align-items: center;
+    	padding-left: 35px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		margin-top: 20px;
+    	border: blue solid;
+	}
+		.icone
+		{
+    		border: solid springgreen;
+    		font-size: 25px;
+    		justify-content: center;
+			color: $texte;
+		}
+		.ville
+		{
+    		font-size: 18px;
+    		text-align: center;
+    		font-weight: 600;
+    		width: 80%;
+			color: $texte;
+			font-size: 25px;
+			border: none;
+    
+			}
+	.explorer
+	{
+		text-align: center;
+		height: 450px;
+		padding-top: 40px;
+		background-color: $cadre;
+	}
+		h1
+		{
+			font-size: 40px;
+			font-weight: 800;
+		}
+		h1+p
+		{
+			color: $texte;
+			font-size: 30px;
+		}
+		button
+		{
+			margin-top: 30px;
+			margin-bottom: 30px;
+			padding: 20px;
+			border-radius: 40px;
+			font-size: 25px;
+			background-color: $secondaire;
+			color: white;
+		}
+	.fonctionnement
+	{
+		display: flex;
+		flex-direction: column;
+		height: 500px;
+		width: 100%;
+		justify-content: space-around;
+		border: violet solid;
+	}
+		h2
+		{
+			margin-top: 50px;
+			margin-bottom: 30px;
+			margin-left: 10px;	
+			font-size: 40px;
+		}
+		.choix
+		{
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			font-size: 16px;
+			height: 100px;
+			width: 100%;
+			border: red solid;
+		}
+			.num
+			{
+				border-radius: 50%;
+				background-color: $primaire;
+				align-items: center;
+				color: white;
+				padding: 2px 8px;
+				margin-left: 10px;
+				position: relative;
+			}
+			.choix i
+			{
+				border: solid green;
+				margin-right: 20px;
+			}
+			.choix_contenu
+			{
+				display: flex;
+				padding: 25px;
+				width: 100%;
+				background-color: $cadre;
+				border-radius: 20px;
+				margin-right: 10px;
+			}
+/*...........2eme section............*/
+.restaurants
+{
+	display: flex;
+	width: 100%;
+	height: 1400px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: $cadre;
+	margin-top: 40px;
+}
+	.carte
+	{
+		display: flex;
+		flex-direction: column;
+		width: 80%;
+		height: 250px;
+		margin-bottom: 20px;
+		border-radius: 20px;
+		border: green solid;
+	}
+		.photo img
+		{
+			display: flex;
+			object-fit: cover;
+			width: 100%;
+			height: 170px;
+			border-radius: 20px 20px 0 0;;
+			border:blue solid;
+		}
+		.description
+		{
+			display: flex;
+			width: 100%;
+			height: 80px;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			padding: 10px;
+			border-radius: 0 0 20px 20px;
+			border: blue solid;
+		}
+			.description i
+			{
+				font-size: 25px;
+				margin-top: 10px;
+				padding-right: 10px;
+			}
