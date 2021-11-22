@@ -1,5 +1,39 @@
+@font-face {
+  font-family: "Robotoreg";
+  src: url("fonts/Roboto-Regular-webfont.ttf") format("truetype"), url("fonts/Roboto-Black-webfont.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Robotobold";
+  src: url("fonts/Roboto-Bold-webfont.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "shrikhand";
+  src: url("fonts/shrikhand-Regular.otf") format("opentype");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Robotoreg", impact, serif;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
 .logo img {
-  width: 20%;
+  width: 40%;
   height: 20%;
 }
 
@@ -9,5 +43,82 @@
   width: 100%;
   height: 200px;
   border: solid red;
+}
+
+.titre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+}
+
+.detailmenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 20px;
+  height: 900px;
+  margin-bottom: 50px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.detailmenu h2 {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.description {
+  font-size: 14px;
+}
+
+article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: red solid;
+  background-color: white;
+  border-radius: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+  height: 60px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-left: 10px;
+  margin-left: 20px;
+  padding-right: 10px;
+}
+
+.descriptiontarif {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: -10px;
+  border: springgreen solid;
 }
 /*# sourceMappingURL=style-menu.css.map */
