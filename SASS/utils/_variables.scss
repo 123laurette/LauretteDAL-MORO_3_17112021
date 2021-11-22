@@ -3,3 +3,5 @@ $secondaire: #FF79DA;
 $tertiaire: #99E2D0;
 $texte:rgb(59, 58, 58);
 $cadre:rgba(245, 244, 244, 0.986);
+$ombre:($texte +70%) 0px 5px 10px;
+$degrade:linear-gradient(to bottom right, $secondaire, $primaire);

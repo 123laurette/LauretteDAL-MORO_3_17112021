@@ -62,10 +62,19 @@
 			margin-bottom: 30px;
 			padding: 10px 20px;
 			border-radius: 40px;
-			font-size: 18px;
-			background: linear-gradient(to bottom right, $secondaire, $primaire);
-			color: white;
+			background: $degrade;
 			border: none;
+		}
+		.explorer a button
+		{
+			text-decoration: none;
+			color: white;
+			font-size: 18px;
+		}
+		.explorer a button:hover
+		{
+			box-shadow: $ombre;
+			filter: brightness(1.3);
 		}
 	.fonctionnement
 	{
@@ -93,6 +102,13 @@
 			height: 100%;
 			width: 100%;
 		}
+			.choix:hover
+			{
+				background-color: #dfccf5;
+				border-radius: 25px;
+				filter: brightness(1.02);
+				box-shadow: $ombre;
+			}
 			.fonctionnement button
 			{
 				border-radius: 25px;
@@ -101,16 +117,6 @@
 				box-shadow: ($texte +110%) 0px 6px 15px;
 				border: none;
 				margin-left: 30px;
-			}
-			.fonctionnement a
-			{
-				text-decoration: none;
-				color: black;
-			}
-			.fonctionnement a :hover
-			{
-				background-color: rgb(249, 233, 252);
-				border-radius: 25px;
 			}
 			.num
 			{
@@ -129,6 +135,10 @@
 				margin-left: 20px;
 				margin-right: 20px;
 				color: $texte +50%;
+			}
+			.choix:hover i 
+			{
+				color: $primaire;
 			}
 			
 /*...........2eme section............*/
@@ -157,6 +167,11 @@
 		{
 			text-decoration: none;
 			color: black;
+		}
+		.carte a:hover
+		{
+			box-shadow: $ombre;
+			border-radius: 20px;
 		}
 		.photo
 		{
@@ -204,3 +219,4 @@
 				padding-right: 10px;
 				color: $texte;
 			}
+			

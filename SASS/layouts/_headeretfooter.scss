@@ -23,9 +23,17 @@ footer
 }
 .menu_footer
 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     margin-top: 15px;
     margin-left: 30px;
     line-height: 30px;
+    width: 55%;
+}
+.menu_footer ul
+{
+    list-style-type: none;
 }
 .menu_footer a
 {
@@ -34,7 +42,11 @@ footer
 }
 .menu_footer i
 {
-    margin-right: 8px;
+    width: 10px;
+    margin-right: 15px;
     font-size: 15px;
-    text-align: center;
 }
+
+
+
+
