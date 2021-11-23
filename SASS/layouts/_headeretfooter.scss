@@ -15,7 +15,7 @@ footer
 {
     height: 240px;
     width: 100%;
-    background-color:black;
+    background-color: darken(grey, $amount: 30);
 }
 .logofooter p
 {

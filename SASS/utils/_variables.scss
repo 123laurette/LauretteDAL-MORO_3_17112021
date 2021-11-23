@@ -4,4 +4,5 @@ $tertiaire: #99E2D0;
 $texte:rgb(114, 113, 113);
 $cadre:rgba(245, 244, 244, 0.986);
 $ombre:($texte +70%) 0px 5px 10px;
+$ombrehover:($texte +110%) 0px 6px 15px;
 $degrade:linear-gradient(to bottom right, $secondaire, $primaire);
