@@ -7,6 +7,18 @@ main
     margin-top: -10%;
     padding-top: 35px;
 }
+.header
+{
+    display: flex;
+    width: 100%;
+    height: 50px;
+}
+.fleche i
+{
+    margin-top: 25px;
+    margin-left: 20px;
+    color: black;
+}
 .photo_menu img
 {
     object-fit: cover;
@@ -108,5 +120,5 @@ h4{
 .bouton a button:hover
 {
 	box-shadow: $texte 0px 7px 15px;
-	filter: brightness(1.3);
+	filter: brightness(1.1);
 }
