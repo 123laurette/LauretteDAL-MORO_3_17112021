@@ -268,6 +268,7 @@ h4 {
 .icone {
   font-size: 20px;
   margin-left: 10%;
+  color: red;
 }
 
 .ville {
@@ -277,8 +278,6 @@ h4 {
   width: 80%;
   color: #727171;
   font-size: 16px;
-  border: none;
-  background: none;
 }
 
 .explorer {
@@ -400,7 +399,6 @@ h2 {
   color: white;
   width: 30px;
   height: 30px;
-  margin-left: -5%;
 }
 
 .choix i {
