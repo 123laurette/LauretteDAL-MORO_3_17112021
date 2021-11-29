@@ -18,12 +18,14 @@
 	}
 		.icone
 		{
+			display: flex;
 			font-size: 20px;
 			margin-left: 8%;
 			margin-right: 5px;
 		}
 		.ville
 		{
+			display: flex;
 			font-size: 18px;
 			font-weight: 600;
 			text-align: center;
@@ -31,7 +33,7 @@
 			color: $texte;
 			font-size: 16px;
 			background-color: $cadre;
-			}
+		}	
 	.explorer
 	{
 		text-align: center;
@@ -80,20 +82,20 @@
 	{
 		display: flex;
 		flex-direction: column;
-		height: 400px;
+		height: 370px;
 		width: 100%;
-		padding-top: 30px;
+		margin-top: 40px;
+		margin-bottom: 10px;
 		justify-content: space-around;
 	}
-		.fonctionnement button
-		{
-			border-radius: 25px;
-			height: 70px;
-			width: 88%;
-			box-shadow: ($texte +110%) 0px 6px 15px;
-			border: none;
-			margin-left: 30px;
-		}
+	.fonctionnement_button
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 100%;
+		height: 300px;
+	}
 		h2
 		{
 			@include fontbold;
@@ -104,20 +106,33 @@
 		.choix
 		{
 			display: flex;
+			flex-direction: column;
+			justify-content: center;
 			align-items: center;
+			margin-top: 0;
 			font-size: 16px;
 			font-weight: 900;
 			height: 100%;
 			width: 100%;
 		}
-			.choix:hover
+			.choix:hover button
 			{
 				background-color: #dfccf5;
 				border-radius: 25px;
 				filter: brightness(1.02);
 				box-shadow: $ombre;
 			}
-			
+			.choix button
+			{
+			display: flex;
+			align-items: center;
+			border-radius: 25px;
+			height: 70px;
+			width: 88%;
+			box-shadow: ($texte +110%) 0px 6px 15px;
+			border: none;
+			margin-left: 30px;
+			}
 			.num
 			{
 				display: flex;
@@ -151,7 +166,6 @@
 	justify-content: center;
 	background-color: $cadre;
 	margin-top: 30px;
-	padding-top: px;
 }	
 
 	.carte
@@ -221,28 +235,29 @@
 				padding-right: 10px;
 				color: $texte;
 			}
-@media screen and (max-width: 2048px) and (min-width: 768px)
+@media screen and (min-width: 768px)
 {
-	.logo img
+	.rechercher
 	{
-		border: yellow solid;
-		width: 35%;
-		height: 25%;
+		padding: 0;
 	}
-	.icone
+	.icone i
 	{
-		margin-left: 0%;
-		font-size: 30px;
+		font-size: 25px;
+		padding: 0;
+		margin-left: -60px;
+
 	}
 	.ville
 	{
-			width: 100%;
 			height: 50px;
+			width: 100%;
 			font-size: 20px;
+			margin-left: -30px;
 	}
 	h1
 	{
-		font-size: 28px;
+		font-size: 35px;
 	}
 	h1+p
 	{
@@ -251,26 +266,28 @@
 	}
 	.explorer a button
 	{
-		width: 40%;
+		width: 300px;
 		font-size: 20px;
 		margin-top: 50px;
 	}
 	.fonctionnement
 	{
-		width: 80%;
+		width: 100%;
+		height: 400px;
 		justify-content: space-around;
 		align-items: center;
-		margin-left: 100px;
 	}
 	h2
 	{
-		font-size: 28px;
+		font-size: 30px;
 		text-align: center;
 		width: 100%;
 		margin: 0;
-		border: springgreen solid;
 	}
-	
+	.choix button
+	{
+		width: 70%;
+	}
 	.choix h4,i
 	{
 		font-size: 18px;
@@ -282,55 +299,77 @@
 		font-size: 20px;
 		border-radius: 20px 0 0 20px;
 		height: 100%;
-		width: 8%;
+		width: 50px;
 	}
 	.carte
 	{
-		width: 80%;
-		margin-left: 100px;
+		width: 90%;
+	
 	}
 	aside
 	{
-		margin-left: 55%;
+		margin-left: 65%;
 	}
-	footer
+	
+}
+@media screen and (min-width: 1294px)
+{
+	.ville
+	{
+		width: 100%;
+	}
+	.fonctionnement
 	{
 		height: 200px;
 	}
-	.menu_footer
+	.fonctionnement_button
 	{
-		margin: 0;
-		width: 100%;
-	}
-	.menu_footer ul
-	{
-		text-align: center;
-		justify-content: space-around;
-		font-size: 16px;
-		width: 100%;
 		flex-direction: row;
-	
+		margin-top: 20px;
+		margin: 0%;
+		padding: 0%;
 	}
-	.menu_footer i
+	.num
 	{
-		width: 30px;
-		font-size: 18px;
-		margin-right: 20px;
+		width: 50px;
 	}
-.logofooter p
-{
-		font-size: 30px;
-		text-align: center;
-		width: 100%;
-		margin: 0;
-		padding: 30px;
-}
-}
-@media screen and (max-width: 2048px) and (min-width: 992px)
-{
-	.logo img
+	.choix button
 	{
-		width: 20%;
+		width: 80%;
+		margin: 0%;
+		padding: 0%;
+	}
+	.choix
+	{
+		width: 50%;
+	}
+	#restaurants
+	{
+		margin: 0%;
+		padding-top: 50px;
+		height: 800px;
+	}
+	.restaurant_carte
+	{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		height: 600px;
+		justify-content: space-around;
+		width: 90%;
+		margin-left: 100px;
+		margin-top: 40px;
+	}
+	.carte
+	{
+		width: 45%;
+		margin: 0%;
+		padding: 0;
+	}
+	aside
+	{
+		margin-left: 30.5%;
+		width: 10%;
 	}
 	
 }

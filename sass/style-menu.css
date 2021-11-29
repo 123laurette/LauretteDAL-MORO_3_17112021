@@ -96,12 +96,56 @@ footer {
   font-size: 15px;
 }
 
+@media screen and (min-width: 768px) {
+  .logo img {
+    width: 200px;
+    height: 50px;
+  }
+  footer {
+    height: 200px;
+  }
+  .menu_footer {
+    margin: 0;
+    width: 100%;
+  }
+  .menu_footer ul {
+    text-align: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    font-size: 16px;
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .menu_footer i {
+    width: 30px;
+    font-size: 18px;
+    margin-right: 20px;
+  }
+  .logofooter p {
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 30px;
+  }
+}
+
+@media screen and (min-width: 1294px) {
+  .logo img {
+    width: 20%;
+  }
+}
+
 main {
   background: rgba(245, 244, 244, 0.986);
   border-radius: 30px 30px 0 0;
   width: 100%;
+  height: 1150px;
   position: relative;
-  margin-top: -10%;
+  margin-top: -15%;
   padding-top: 35px;
 }
 
@@ -123,7 +167,7 @@ main {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  height: 250px;
+  height: 50%;
   margin-top: 20px;
 }
 
@@ -173,7 +217,7 @@ main {
   border-bottom: solid #99E2D0;
   padding-bottom: 5px;
   margin-bottom: -5px;
-  width: 12%;
+  width: 45px;
   color: #727171;
 }
 
@@ -256,5 +300,94 @@ h4 {
           box-shadow: #727171 0px 7px 15px;
   -webkit-filter: brightness(1.1);
           filter: brightness(1.1);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1293px) {
+  .photo_menu img {
+    height: 5%;
+  }
+  .fleche {
+    margin-left: 50px;
+  }
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 50px;
+    padding-right: 40px;
+  }
+  .coeur {
+    margin-right: 60px;
+  }
+}
+
+@media screen and (min-width: 1294px) {
+  .photo_menu img {
+    height: 700px;
+  }
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: -80px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .titre {
+    width: 60%;
+    margin-right: 100px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .titre h1 {
+    font-size: 30px;
+  }
+  .titre i {
+    font-size: 30px;
+  }
+  .detailmenu h2 {
+    font-size: 25px;
+    text-align: center;
+    margin-left: 50px;
+  }
+  .detailmenu {
+    width: 70%;
+    height: 1500px;
+  }
+  .descriptiontarif {
+    height: 70px;
+  }
+  h4 {
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+  .menu {
+    height: 70px;
+  }
+  .description_menu {
+    font-size: 18px;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+  .tarif {
+    font-size: 20px;
+    margin-right: 20px;
+  }
+  .bouton button {
+    width: 400px;
+  }
+  .bouton a button {
+    font-size: 22px;
+  }
 }
 /*# sourceMappingURL=style-menu.css.map */

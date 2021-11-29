@@ -18,7 +18,7 @@
         <!--..................1ere SECTION..................-->
             <section class="suiteheader">
                 <div class="rechercher">
-                    <p><div class="icone"><i class="fas fa-map-marker-alt"></i></div></p>
+                    <p class="icone"><i class="fas fa-map-marker-alt"></i></p>
                     <form method="post" action="traitement.php">
                         <input class="ville" type="search" value="Paris, Belleville"/>
                     </form>
@@ -26,24 +26,27 @@
                 <div class="explorer">
                     <h1>Réservez le menu qui vous convient</h1>
                     <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-                    <a href="#restaurants"><button>Explorer nos restaurants</button></a>
+                    <div><a href="#restaurants"><button>Explorer nos restaurants</button></a></div>
                 </div>
                 <div class="fonctionnement">
                     <h2>Fonctionnement</h2>
-                    <button><div class="choix">
-                        <div class="num"><p>1</p></div><i class="fas fa-mobile-alt"></i><h4>Choisissez un restaurant</h4></div>
-                    </button> 
-                    <button><div class="choix">
-                        <div class="num"><p>2</p></div><i class="fas fa-list-ul"></i><h4>Composez votre menu</h4></div>
-                    </button>
-                    <button><div class="choix">
-                        <div class="num"><p>3</p></div><i class="fas fa-store"></i><h4>Dégustez au restaurant</h4></div>
-                    </button>
+                    <div class="fonctionnement_button">
+                    <div class="choix"><button>
+                        <div class="num"><p>1</p></div><i class="fas fa-mobile-alt"></i><h4>Choisissez un restaurant</h4>
+                    </button></div> 
+                    <div class="choix"><button>
+                        <div class="num"><p>2</p></div><i class="fas fa-list-ul"></i><h4>Composez votre menu</h4>
+                    </button></div>
+                    <div class="choix"><button>
+                        <div class="num"><p>3</p></div><i class="fas fa-store"></i><h4>Dégustez au restaurant</h4>
+                    </button></div>
+                    </div>
                 </div>
             </section>
         <!--................2ème SECTION.................-->
             <section id="restaurants">
                 <h2>Restaurants</h2>
+                <div class="restaurant_carte">
                 <article class="carte"><a href="palette_du_gout.html">
                     <div class="photo">
                         <aside>Nouveau</aside>
@@ -82,6 +85,7 @@
                         <p>Folie-Mérencourt</p>
                         </div></a>
                 </article>
+                </div>
             </section>
         <!--..................FOOTER.................-->
         <footer>
@@ -91,7 +95,7 @@
                 <li><a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a></li>
                 <li><a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a></li>
                 <li><a href="#">Mentions légales</a></li>
-                <li><a href="#email">Contact</a></li>
+                <li><a href="#email">Contact</a></li></ul>
             </div>
         </footer>
     </body>
