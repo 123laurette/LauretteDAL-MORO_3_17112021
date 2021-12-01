@@ -8,7 +8,7 @@
 .logo img
 {
     width: 130px;
-    height: 35px;
+    height: auto;
     margin-top: 20px;
 }
 footer
@@ -58,8 +58,8 @@ footer
 {
     .logo img
 	{
-		width: 200px;
-		height: 50px;
+		width: 20%;
+		height: auto;
 	}
     footer
 	{
@@ -98,6 +98,9 @@ footer
 {
     .logo img
 	{
-		width: 20%;
+		width: 15%;
+		height: auto;
+		margin-right: 100px;
+
 	}
 }
