@@ -125,7 +125,7 @@ h4
 {
     font-weight: 800;
     color: black;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 .valide i
 {
@@ -134,7 +134,11 @@ h4
     
     transform: scale(1);
 }
-.valide:hover i
+.menu:hover
+{
+    box-shadow: grey 6px 6px 6px;
+
+    .valide i
 {
     color: white;
     font-size: 20px;
@@ -142,16 +146,13 @@ h4
     justify-content: center;
     padding: 8px;
     width: 0%;
-    margin-top: -31px;
+    margin-top: -31.5px;
     border-radius: 0 20px 20px 0;
     width: 50px;
     height: 60px;
     background-color: $tertiaire;
     transition: scaleX(1.05);
 }
-.menu:hover
-{
-    box-shadow: grey 6px 6px 6px;
 }
 .bouton
 {
