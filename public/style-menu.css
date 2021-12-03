@@ -177,9 +177,8 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -188,19 +187,21 @@ main {
 .titre h1 {
   font-family: "shrikhand", impact, serif;
   font-size: 25px;
-  margin-left: 20px;
+  margin-left: -30px;
 }
 
 .coeur i {
   font-size: 25px;
-  margin-right: 40px;
+  margin-top: -12px;
+  position: absolute;
 }
 
-.coeur:hover i {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: linear-gradient(to bottom right, #FF79DA, #9356DC);
+.coeurvide i {
+  color: #727171;
+}
+
+.coeurrempli i {
+  color: transparent;
 }
 
 .detailmenu {
@@ -250,6 +251,8 @@ h4 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 220px;
+  -webkit-transition: 2s;
+  transition: 2s;
 }
 
 .menu {
@@ -292,46 +295,55 @@ h4 {
 
 .description_menu {
   color: #727171;
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .tarif {
   font-weight: 800;
   color: black;
-  margin-right: 10px;
-  text-overflow: ellipsis;
 }
 
-.valide i {
+.valide {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   color: transparent;
+  -webkit-transform: rotate(0turn);
+          transform: rotate(0turn);
+}
+
+.menu:hover {
+  -webkit-box-shadow: grey 6px 6px 6px;
+          box-shadow: grey 6px 6px 6px;
+}
+
+.menu:hover .valide {
+  color: white;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 20px;
-  padding: 10px;
-  width: 50px;
-  height: 60px;
-  margin-top: -31px;
+  margin-top: -32px;
+  margin-left: 20px;
+  height: 61px;
+  padding: 13px;
   border-radius: 0 20px 20px 0;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-}
-
-.valide:hover i {
-  color: white;
   background-color: #99E2D0;
-  -webkit-transition: scaleX(1.05);
-  transition: scaleX(1.05);
+  -webkit-transition: 2000ms translateX(0, 0);
+  transition: 2000ms translateX(0, 0);
 }
 
-.menu:hover {
-  -webkit-box-shadow: grey 6px 6px 6px;
-          box-shadow: grey 6px 6px 6px;
+.menu:hover .valide i {
+  font-size: 20px;
+  -webkit-transform: rotate(1turn);
+          transform: rotate(1turn);
+  -webkit-transition: 900ms;
+  transition: 900ms;
 }
 
 .bouton {
@@ -420,9 +432,8 @@ h4 {
   .titre h1 {
     font-size: 35px;
     margin-bottom: 20px;
-    margin-left: 70px;
   }
-  .titre i {
+  .coeur i {
     font-size: 35px;
     margin-bottom: 20px;
   }
