@@ -53,10 +53,6 @@ main
 {
     color: transparent
 }
-.coeurrempli:hover i
-{
-    color: $primaire;
-}
 .detailmenu
 {
     display: flex;
@@ -91,6 +87,7 @@ h4
     flex-direction: column;
     justify-content: space-between;
     height: 220px;
+    transition: 2s;
 }
 .menu
 {
@@ -106,7 +103,6 @@ h4
     margin-left: 20px;
     box-shadow: $ombre;
 }
-
 .descriptiontarif
 {
     display: flex;
@@ -119,40 +115,45 @@ h4
 .description_menu
 {
     color: $texte;
+    white-space: nowrap;
     width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .tarif
 {
     font-weight: 800;
     color: black;
-    margin-right: 20px;
 }
-.valide i
+.valide
 {
     display: flex;
     color:transparent;
-    
-    transform: scale(1);
+    transform: rotate(0turn);
 }
 .menu:hover
 {
     box-shadow: grey 6px 6px 6px;
 
-    .valide i
-{
+    .valide
+    {
     color: white;
-    font-size: 20px;
     align-items: center;
     justify-content: center;
-    padding: 8px;
-    width: 0%;
-    margin-top: -31.5px;
+    margin-top: -32px;
+    margin-left: 20px;
+    height: 61px;
+    padding: 13px;
     border-radius: 0 20px 20px 0;
-    width: 50px;
-    height: 60px;
     background-color: $tertiaire;
-    transition: scaleX(1.05);
-}
+    transition: 2000ms translateX(0,0);
+    }
+    .valide i
+    {
+        font-size: 20px;
+    transform: rotate(1turn);
+    transition: 900ms;
+    }
 }
 .bouton
 {
@@ -285,8 +286,8 @@ h4
     }
     .bouton button
     {
-       width: 400px;
-       margin-top: 30px;
+        width: 400px;
+        margin-top: 30px;
     }
     .bouton a button
     {
