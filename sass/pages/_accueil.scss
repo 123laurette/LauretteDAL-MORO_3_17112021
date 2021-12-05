@@ -152,6 +152,10 @@
 				color: $texte +50%;
 				font-size: 20px;
 			}
+			.choix h4
+			{
+				margin-bottom: 10px;
+			}
 			.choix:hover i 
 			{
 				color: $primaire;
@@ -348,10 +352,6 @@
 /*..................DESKTOP................................*/
 @media screen and (min-width: 1294px)
 {
-	.ville
-	{
-		width: 100%;
-	}
 	.fonctionnement
 	{
 		height: 200px;

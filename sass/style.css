@@ -98,7 +98,7 @@ footer {
 
 @media screen and (min-width: 768px) {
   .logo img {
-    width: 20%;
+    width: 15%;
     height: auto;
   }
   footer {
@@ -125,7 +125,7 @@ footer {
     margin-right: 20px;
   }
   .logofooter p {
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
     width: 100%;
     margin: 0;
@@ -135,9 +135,8 @@ footer {
 
 @media screen and (min-width: 1294px) {
   .logo img {
-    width: 15%;
+    width: 10%;
     height: auto;
-    margin-right: 100px;
   }
 }
 
@@ -251,8 +250,47 @@ h4 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 220px;
-  -webkit-transition: 2s;
-  transition: 2s;
+}
+
+.blocmenu--entree {
+  -webkit-animation: apparition-menu 2s;
+          animation: apparition-menu 2s;
+}
+
+.blocmenu--plat {
+  -webkit-animation: apparition-menu 5s;
+          animation: apparition-menu 5s;
+}
+
+.blocmenu--dessert {
+  -webkit-animation: apparition-menu 8s;
+          animation: apparition-menu 8s;
+}
+
+@-webkit-keyframes apparition-menu {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(5vh);
+            transform: translateY(5vh);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes apparition-menu {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(5vh);
+            transform: translateY(5vh);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 
 .menu {
@@ -273,8 +311,6 @@ h4 {
       justify-content: space-around;
   padding-left: 10px;
   margin-left: 20px;
-  -webkit-box-shadow: #b8b7b7 0px 5px 10px;
-          box-shadow: #b8b7b7 0px 5px 10px;
 }
 
 .descriptiontarif {
@@ -334,8 +370,8 @@ h4 {
   padding: 13px;
   border-radius: 0 20px 20px 0;
   background-color: #99E2D0;
-  -webkit-transition: 2000ms translateX(0, 0);
-  transition: 2000ms translateX(0, 0);
+  -webkit-transition: 900ms translateX();
+  transition: 900ms translateX();
 }
 
 .menu:hover .valide i {
@@ -379,7 +415,7 @@ h4 {
 
 @media screen and (min-width: 768px) and (max-width: 1293px) {
   .photo_menu img {
-    height: 5%;
+    height: 500px;
   }
   .fleche {
     margin-left: 50px;
@@ -402,7 +438,7 @@ h4 {
 
 @media screen and (min-width: 1294px) {
   .photo_menu img {
-    height: 400px;
+    height: 300px;
     width: 100%;
   }
   .fleche {
@@ -435,7 +471,7 @@ h4 {
   }
   .coeur i {
     font-size: 35px;
-    margin-bottom: 20px;
+    margin-top: -35px;
   }
   .menu {
     height: auto;
@@ -456,7 +492,7 @@ h4 {
             align-items: center;
   }
   .blocmenu {
-    width: 90%;
+    width: 100%;
     -ms-flex-pack: distribute;
         justify-content: space-around;
     -webkit-box-orient: horizontal;
@@ -471,7 +507,7 @@ h4 {
   h4 {
     font-size: 20px;
     margin-left: 20px;
-    margin-top: 15px;
+    margin-top: 20px;
   }
   .description_menu {
     font-size: 18px;
@@ -481,6 +517,11 @@ h4 {
   .tarif {
     font-size: 20px;
     margin-right: 20px;
+  }
+  .menu:hover .valide {
+    margin-top: -46px;
+    height: 117px;
+    padding: 20px;
   }
   .bouton button {
     width: 400px;
@@ -700,6 +741,10 @@ h2 {
   font-size: 20px;
 }
 
+.choix h4 {
+  margin-bottom: 10px;
+}
+
 .choix:hover i {
   color: #9356DC;
 }
@@ -908,9 +953,6 @@ aside {
 
 /*..................DESKTOP................................*/
 @media screen and (min-width: 1294px) {
-  .ville {
-    width: 100%;
-  }
   .fonctionnement {
     height: 200px;
   }
