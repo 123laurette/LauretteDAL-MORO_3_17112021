@@ -1,3 +1,29 @@
+/*
+@keyframes loader-spinner{
+0% {transform: rotate(0turn);
+	opacity:1;}
+100% {transform: rotate(5turn);
+		opacity:0;}
+}
+.loader
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "shrikhand", impact, serif;
+	text-align: center;
+	font-size: 30px;
+	color: $texte;
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	box-shadow: 50px 30px 20px $secondaire inset;
+	position: absolute;
+	background:$degrade;
+	margin-top: 50%;
+	margin-left: 10%;
+	animation: loader-spinner 20s;
+}*/
 
 /*.........1ere section............*/
 .suiteheader

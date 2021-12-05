@@ -253,18 +253,18 @@ h4 {
 }
 
 .blocmenu--entree {
-  -webkit-animation: apparition-menu 2s;
-          animation: apparition-menu 2s;
+  -webkit-animation: apparition-menu 3s;
+          animation: apparition-menu 3s;
 }
 
 .blocmenu--plat {
-  -webkit-animation: apparition-menu 5s;
-          animation: apparition-menu 5s;
+  -webkit-animation: apparition-menu 7s;
+          animation: apparition-menu 7s;
 }
 
 .blocmenu--dessert {
-  -webkit-animation: apparition-menu 8s;
-          animation: apparition-menu 8s;
+  -webkit-animation: apparition-menu 11s;
+          animation: apparition-menu 11s;
 }
 
 @-webkit-keyframes apparition-menu {
@@ -532,6 +532,32 @@ h4 {
   }
 }
 
+/*
+@keyframes loader-spinner{
+0% {transform: rotate(0turn);
+	opacity:1;}
+100% {transform: rotate(5turn);
+		opacity:0;}
+}
+.loader
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "shrikhand", impact, serif;
+	text-align: center;
+	font-size: 30px;
+	color: $texte;
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	box-shadow: 50px 30px 20px $secondaire inset;
+	position: absolute;
+	background:$degrade;
+	margin-top: 50%;
+	margin-left: 10%;
+	animation: loader-spinner 20s;
+}*/
 /*.........1ere section............*/
 .suiteheader {
   display: -webkit-box;

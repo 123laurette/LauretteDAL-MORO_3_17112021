@@ -253,18 +253,18 @@ h4 {
 }
 
 .blocmenu--entree {
-  -webkit-animation: apparition-menu 2s;
-          animation: apparition-menu 2s;
+  -webkit-animation: apparition-menu 3s;
+          animation: apparition-menu 3s;
 }
 
 .blocmenu--plat {
-  -webkit-animation: apparition-menu 5s;
-          animation: apparition-menu 5s;
+  -webkit-animation: apparition-menu 7s;
+          animation: apparition-menu 7s;
 }
 
 .blocmenu--dessert {
-  -webkit-animation: apparition-menu 8s;
-          animation: apparition-menu 8s;
+  -webkit-animation: apparition-menu 11s;
+          animation: apparition-menu 11s;
 }
 
 @-webkit-keyframes apparition-menu {
