@@ -1,4 +1,4 @@
-main
+.main
 {
     background: $cadre;
     border-radius: 30px 30px 0 0;
@@ -152,7 +152,7 @@ h4
 {
     display: flex;
     color:transparent;
-    transform: rotate(0turn);
+    transform: rotate(0turn) translate(0, 0);
 }
 .menu:hover
 {
@@ -169,7 +169,7 @@ h4
     padding: 13px;
     border-radius: 0 20px 20px 0;
     background-color: $tertiaire;
-    transition: 900ms  translateX();
+    transition: 2000ms 10s translateX(80px, 0);
     }
     .valide i
     {
@@ -212,7 +212,7 @@ h4
     {
         margin-left: 50px;
     }
-    main
+    .main
     {
         display: flex;
         flex-direction: column;
@@ -235,7 +235,7 @@ h4
     {
         margin-left: 90px;
     }
-    main
+    .main
     {
         display: flex;
         height: 900px;
@@ -252,12 +252,12 @@ h4
     }
     .titre h1
     {
-        font-size: 35px;
+        font-size: 30px;
         margin-bottom: 20px;
     }
     .coeur i
     {
-        font-size: 35px;
+        font-size: 30px;
         margin-top: -35px;
     }
     .menu
