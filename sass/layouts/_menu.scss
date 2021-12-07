@@ -154,7 +154,7 @@ h4
     color:transparent;
     transform: rotate(0turn) translate(0, 0);
 }
-.menu:hover
+.menu:active
 {
     box-shadow: grey 6px 6px 6px;
 
@@ -197,7 +197,7 @@ h4
 	color: white;
 	font-size: 16px;
 }
-.bouton a button:hover
+.bouton a button:active
 {
 	box-shadow: $texte 0px 7px 15px;
 	filter: brightness(1.1);
@@ -309,11 +309,26 @@ h4
     }
     .menu:hover
 {
+    box-shadow: grey 6px 6px 6px;
+
     .valide
     {
-        margin-top: -46px;
-        height: 117px;
-        padding: 20px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    margin-top: -46px;
+    margin-left: 20px;
+    height: 117px;
+    padding: 20px;
+    border-radius: 0 20px 20px 0;
+    background-color: $tertiaire;
+    transition: 2000ms 10s translateX(80px, 0);
+    }
+    .valide i
+    {
+        font-size: 20px;
+    transform: rotate(1turn);
+    transition: 900ms;
     }
 }
     .bouton button
@@ -324,5 +339,10 @@ h4
     .bouton a button
     {
         font-size: 22px;
+    }
+    .bouton a button:hover
+    {
+        box-shadow: $texte 0px 7px 15px;
+        filter: brightness(1.1);
     }
 }

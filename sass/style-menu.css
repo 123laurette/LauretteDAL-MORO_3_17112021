@@ -355,12 +355,12 @@ h4 {
           transform: rotate(0turn) translate(0, 0);
 }
 
-.menu:hover {
+.menu:active {
   -webkit-box-shadow: grey 6px 6px 6px;
           box-shadow: grey 6px 6px 6px;
 }
 
-.menu:hover .valide {
+.menu:active .valide {
   color: white;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -378,7 +378,7 @@ h4 {
   transition: 2000ms 10s translateX(80px, 0);
 }
 
-.menu:hover .valide i {
+.menu:active .valide i {
   font-size: 20px;
   -webkit-transform: rotate(1turn);
           transform: rotate(1turn);
@@ -410,7 +410,7 @@ h4 {
   font-size: 16px;
 }
 
-.bouton a button:hover {
+.bouton a button:active {
   -webkit-box-shadow: #727171 0px 7px 15px;
           box-shadow: #727171 0px 7px 15px;
   -webkit-filter: brightness(1.1);
@@ -522,10 +522,33 @@ h4 {
     font-size: 20px;
     margin-right: 20px;
   }
+  .menu:hover {
+    -webkit-box-shadow: grey 6px 6px 6px;
+            box-shadow: grey 6px 6px 6px;
+  }
   .menu:hover .valide {
+    color: white;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-top: -46px;
+    margin-left: 20px;
     height: 117px;
     padding: 20px;
+    border-radius: 0 20px 20px 0;
+    background-color: #99E2D0;
+    -webkit-transition: 2000ms 10s translateX(80px, 0);
+    transition: 2000ms 10s translateX(80px, 0);
+  }
+  .menu:hover .valide i {
+    font-size: 20px;
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+    -webkit-transition: 900ms;
+    transition: 900ms;
   }
   .bouton button {
     width: 400px;
@@ -533,6 +556,12 @@ h4 {
   }
   .bouton a button {
     font-size: 22px;
+  }
+  .bouton a button:hover {
+    -webkit-box-shadow: #727171 0px 7px 15px;
+            box-shadow: #727171 0px 7px 15px;
+    -webkit-filter: brightness(1.1);
+            filter: brightness(1.1);
   }
 }
 /*# sourceMappingURL=style-menu.css.map */

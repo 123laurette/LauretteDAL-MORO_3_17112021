@@ -88,7 +88,7 @@ main
 			color: white;
 			font-size: 16px;
 		}
-		.explorer a button:hover
+		.explorer a button:active
 		{
 			box-shadow: $texte 0px 7px 15px;
 			filter: brightness(1.1);
@@ -131,7 +131,7 @@ main
 			height: 100%;
 			width: 100%;
 		}
-			.choix:hover button
+			.choix:active button
 			{
 				background-color: #dfccf5;
 				border-radius: 25px;
@@ -172,7 +172,7 @@ main
 			{
 				margin-bottom: 10px;
 			}
-			.choix:hover i 
+			.choix:active i 
 			{
 				color: $primaire;
 			}
@@ -205,7 +205,7 @@ main
 			text-decoration: none;
 			color: black;
 		}
-		.carte a:hover
+		.carte a:active
 		{
 			box-shadow: $ombre;
 			border-radius: 20px;
@@ -266,7 +266,7 @@ main
 			{
 				color: transparent
 			}
-			.coeurrempli:hover i
+			.coeurrempli:active i
 			{
 				background: linear-gradient(0deg, $secondaire, $primaire);
 				background-clip: text;
@@ -437,5 +437,30 @@ main
 		margin-left: 30.5%;
 		width: 10%;
 	}
-	
+	.explorer a button:hover
+	{
+		box-shadow: $texte 0px 7px 15px;
+		filter: brightness(1.1);
+	}
+	.choix:hover button
+	{
+		background-color: #dfccf5;
+		border-radius: 25px;
+		filter: brightness(1.02);
+		box-shadow: $ombre;
+	}
+	.choix:hover i
+	{
+		color: $primaire;
+	}
+	.carte a:hover
+	{
+		box-shadow: $ombre;
+		border-radius: 20px;
+	}
+	.coeurrempli:hover i
+	{
+		background: linear-gradient(0deg, $secondaire, $primaire);
+		background-clip: text;
+	}
 }
