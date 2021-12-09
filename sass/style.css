@@ -209,7 +209,7 @@ footer {
 .coeurrempli:active {
   background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), to(#9356DC));
   background: linear-gradient(0deg, #FF79DA, #9356DC);
-  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .detailmenu {
@@ -579,7 +579,7 @@ h4 {
   .coeurrempli:hover {
     background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), to(#9356DC));
     background: linear-gradient(0deg, #FF79DA, #9356DC);
-    -webkit-background-clip: text;
+    background-clip: text;
   }
 }
 
@@ -946,7 +946,7 @@ aside {
 .coeurrempli:active {
   background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), to(#9356DC));
   background: linear-gradient(0deg, #FF79DA, #9356DC);
-  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 /*.....................TABLETTE................*/

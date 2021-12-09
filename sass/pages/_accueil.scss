@@ -262,7 +262,7 @@ main
 			.coeurrempli:active
 			{
 				background: linear-gradient(0deg, $secondaire, $primaire);
-				-webkit-background-clip: text;
+				background-clip: text;
 			}
 
 
