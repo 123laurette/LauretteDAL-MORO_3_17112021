@@ -14,7 +14,7 @@
     width: 100%;
     height: 50px;
 }
-.fleche i
+.fleche
 {
     margin-top: 25px;
     margin-left: 20px;
@@ -30,28 +30,34 @@
 .titre
 {
     display: flex;
-    justify-content: space-around;
     align-items: center;
+
 }
 .titre h1
 {
     font-family: "shrikhand", impact, serif; 
     font-size: 25px;
-    margin-left: -30px;
+    margin-left: 30px;
 }
 .coeur i
 {
     font-size: 25px;
-    margin-top: -12px;
+    margin-top: -15px;
+    margin-left: 50px;
     position: absolute;
 }
-.coeurvide i
+.coeurvide
 {
     color: $texte;
 }
-.coeurrempli i
+.coeurrempli
 {
     color: transparent
+}
+.coeurrempli:active
+{
+    background: linear-gradient(0deg, $secondaire, $primaire);
+    -webkit-background-clip: text;
 }
 .detailmenu
 {
@@ -80,6 +86,9 @@ h4
     width: 100%;
     margin-top: 10px;
     color: black;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .blocmenu
 {
@@ -140,19 +149,21 @@ h4
     color: $texte;
     white-space: nowrap;
     width: 100%;
+    height: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 .tarif
 {
     font-weight: 800;
+    margin-right: 8px;
     color: black;
 }
 .valide
 {
     display: flex;
-    color:transparent;
-    transform: rotate(0turn) translate(0, 0);
+    color: transparent;
+    transform: rotate(0turn);
 }
 .menu:active
 {
@@ -161,21 +172,24 @@ h4
     .valide
     {
     color: white;
+    background-color: $tertiaire;
+    width: 60px;
+    height: 60px;
     align-items: center;
     justify-content: center;
-    margin-top: -32px;
-    margin-left: 20px;
-    height: 61px;
-    padding: 13px;
+    padding: 4px;
+    margin-top: -31.5px;
+    margin-left: 5px;
     border-radius: 0 20px 20px 0;
-    background-color: $tertiaire;
-    transition: 2000ms 10s translateX(80px, 0);
+    transform: translateX(0, 0);
     }
     .valide i
     {
-        font-size: 20px;
+        font-size: 18px;
+        align-items: center;
+        justify-content: center;
     transform: rotate(1turn);
-    transition: 900ms;
+    transition: 500ms;
     }
 }
 .bouton
@@ -202,7 +216,7 @@ h4
 	box-shadow: $texte 0px 7px 15px;
 	filter: brightness(1.1);
 }
-@media screen and (min-width: 768px) and (max-width: 1293px)
+@media screen and (max-width: 1293px) and (mini-width: 768px)
 {
     .photo_menu img
     {
@@ -218,10 +232,6 @@ h4
         flex-direction: column;
         padding-left: 50px;
         padding-right: 40px;
-    }
-    .coeur
-    {
-        margin-right: 60px;
     }
 }
 @media screen and (min-width: 1294px)
@@ -258,11 +268,10 @@ h4
     .coeur i
     {
         font-size: 30px;
-        margin-top: -35px;
     }
     .menu
     {
-        height: auto;
+        height: 100px;
         width: 30%;
     }
     .detailmenu h2
@@ -318,7 +327,7 @@ h4
     justify-content: center;
     margin-top: -46px;
     margin-left: 20px;
-    height: 117px;
+    height: 100px;
     padding: 20px;
     border-radius: 0 20px 20px 0;
     background-color: $tertiaire;
@@ -344,5 +353,11 @@ h4
     {
         box-shadow: $texte 0px 7px 15px;
         filter: brightness(1.1);
+    }
+
+    .coeurrempli:hover
+    {
+        background: linear-gradient(0deg, $secondaire, $primaire);
+        -webkit-background-clip: text;
     }
 }
