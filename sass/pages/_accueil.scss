@@ -72,23 +72,18 @@ main
 			font-size: 20px;
 			margin-left: 10px;
 			margin-right: 10px;
-		}
-		.explorer button
-		{
-			margin-top: 30px;
-			margin-bottom: 30px;
-			padding: 10px 20px;
-			border-radius: 40px;
-			background: $degrade;
-			border: none;
+			margin-bottom: 40px;
 		}
 		.explorer a
 		{
 			text-decoration: none;
 			color: white;
 			font-size: 16px;
+			padding: 10px 20px;
+			border-radius: 40px;
+			background: $degrade;
 		}
-		.explorer button:active
+		.explorer a:active
 		{
 			box-shadow: $texte 0px 7px 15px;
 			filter: brightness(1.1);
@@ -300,14 +295,10 @@ main
 		font-size: 20px;
 		margin-top: 30px;
 	}
-	.explorer
-	{
-		height: 270px;
-	}
-	.explorer a button
+	.explorer a
 	{
 		width: 300px;
-		font-size: 20px;
+		font-size: 18px;
 	}
 	.fonctionnement
 	{
@@ -383,14 +374,15 @@ main
 	{
 		font-size: 18px;
 	}
-	.explorer button
+	.explorer
 	{
-		width: 400px;
+		width: 100%;
 	}
 	.explorer a
 	{
 		font-size: 18px;
 	}
+	
 	.fonctionnement
 	{
 		height: 200px;

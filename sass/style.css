@@ -549,7 +549,7 @@ h4 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-top: -36px;
+    margin-top: -363px;
     margin-left: 20px;
     height: 80px;
     padding: 20px;
@@ -693,25 +693,20 @@ h1 + p {
   font-size: 20px;
   margin-left: 10px;
   margin-right: 10px;
-}
-
-.explorer button {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  padding: 10px 20px;
-  border-radius: 40px;
-  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  border: none;
+  margin-bottom: 40px;
 }
 
 .explorer a {
   text-decoration: none;
   color: white;
   font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 40px;
+  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
 }
 
-.explorer button:active {
+.explorer a:active {
   -webkit-box-shadow: #727171 0px 7px 15px;
           box-shadow: #727171 0px 7px 15px;
   -webkit-filter: brightness(1.1);
@@ -980,12 +975,9 @@ aside {
     font-size: 20px;
     margin-top: 30px;
   }
-  .explorer {
-    height: 270px;
-  }
-  .explorer a button {
+  .explorer a {
     width: 300px;
-    font-size: 20px;
+    font-size: 18px;
   }
   .fonctionnement {
     width: 100%;
@@ -1048,8 +1040,8 @@ aside {
   .ville {
     font-size: 18px;
   }
-  .explorer button {
-    width: 400px;
+  .explorer {
+    width: 100%;
   }
   .explorer a {
     font-size: 18px;
