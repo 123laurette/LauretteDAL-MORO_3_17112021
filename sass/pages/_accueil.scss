@@ -83,7 +83,7 @@ main
 			border-radius: 40px;
 			background: $degrade;
 		}
-		.explorer a:active
+		.explorer a:hover
 		{
 			box-shadow: $texte 0px 7px 15px;
 			filter: brightness(1.1);
@@ -193,7 +193,7 @@ main
 			text-decoration: none;
 			color: black;
 		}
-		.carte a:active
+		.carte a:hover
 		{
 			box-shadow: $ombre;
 			border-radius: 20px;
@@ -254,7 +254,7 @@ main
 			{
 				opacity: 0;
 			}
-			.coeurrempli:active
+			.coeurrempli:hover
 			{
 				opacity: 1;
 				background: linear-gradient(0deg, $secondaire, $primaire);

@@ -54,7 +54,7 @@
 {
 	opacity: 0;
 }
-.coeurrempli:active
+.coeurrempli:hover
 {
 	opacity: 1;
 	background: linear-gradient(0deg, $secondaire, $primaire);
@@ -167,7 +167,7 @@ h4
     color: transparent;
     transform: rotate(0turn);
 }
-.menu:active
+.menu:hover
 {
     box-shadow: grey 6px 6px 6px;
 
@@ -318,51 +318,17 @@ h4
         font-size: 20px;
         margin-right: 20px;
     }
-    .menu:hover
+.menu:hover
 {
-    box-shadow: grey 6px 6px 6px;
-
     .valide
     {
-    color: white;
-    align-items: center;
-    justify-content: center;
-    margin-top: -363px;
-    margin-left: 20px;
-    height: 80px;
-    padding: 20px;
-    border-radius: 0 20px 20px 0;
-    background-color: $tertiaire;
-    transition: 2000ms 10s translateX(80px, 0);
-    }
-    .valide i
-    {
-        font-size: 20px;
-    transform: rotate(1turn);
-    transition: 900ms;
+        height: 80px;
+        margin-top: -36px;
     }
 }
-    .bouton button
-    {
-        width: 400px;
-        margin-top: 30px;
-    }
-    .bouton a button
-    {
-        font-size: 22px;
-    }
-    .bouton a button:hover
-    {
-        box-shadow: $texte 0px 7px 15px;
-        filter: brightness(1.1);
-    }
-
-    .coeurrempli:hover
-	{
-		opacity: 1;
-		background: linear-gradient(0deg, $secondaire, $primaire);
-		background-clip: text;
-		-webkit-background-clip: text;
-		color: transparent;
-	}
+.bouton button
+{
+    width: 300px;
+    margin-top: 100px;
+}
 }
