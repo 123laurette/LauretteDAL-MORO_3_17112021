@@ -323,10 +323,10 @@ main
 		width: 100%;
 		margin: 0;
 	}
-	.choix button
+	.choix
 	{
-		width: 50%;
-		justify-content: center;
+		width: 80%;
+		margin-left: 100px;
 	}
 	.choix i
 	{
@@ -349,7 +349,7 @@ main
 	.carte
 	{
 		width: 90%;
-		margin-left: 40px;
+		margin-left: 15px;
 		padding: 0;
 	
 	}
@@ -371,26 +371,61 @@ main
 /*..................DESKTOP................................*/
 @media screen and (min-width: 1294px)
 {
+	main
+	{
+		width: 100%;
+	}
+	.rechercher i
+	{
+		margin-left: 2%;
+	}
+	.ville
+	{
+		font-size: 18px;
+	}
+	.explorer button
+	{
+		width: 400px;
+	}
+	.explorer a
+	{
+		font-size: 18px;
+	}
 	.fonctionnement
 	{
-		height: 300px;
+		height: 200px;
+	}
+	h2
+	{
+		text-align: center;
+		margin: 0;
 	}
 	.fonctionnement_bouton
 	{
 		flex-direction: row;
 		justify-content: space-around;
-		width: 90%;
+		width: 100%;
 		
+	}
+	.num
+	{
+		margin-left: 0;
+		font-size: 16px;
+		border-radius: 20px 0 0 20px;
+		height: 100%;
+		width: 50px;
 	}
 	h4
 	{
 		margin-top: 10px;
+		font-size: 18px;
 	}
 	.choix
 	{
 		margin: 0;
 		margin-top: 50px;
 		width: 500px;
+		height: 50px;
 	}
 	#restaurants
 	{
@@ -426,6 +461,10 @@ main
 		margin-left: 30.5%;
 		width: 10%;
 	}
+	.coeur i
+	{
+		margin-left: 37%;
+	}
 	.explorer button:hover
 	{
 		box-shadow: $texte 0px 7px 15px;
@@ -447,9 +486,12 @@ main
 		box-shadow: $ombre;
 		border-radius: 20px;
 	}
-	.coeurrempli:hover i
+	.coeurrempli:hover
 	{
+		opacity: 1;
 		background: linear-gradient(0deg, $secondaire, $primaire);
 		background-clip: text;
+		-webkit-background-clip: text;
+		color: transparent;
 	}
 }
