@@ -263,12 +263,13 @@ h4 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 220px;
+  height: 200px;
 }
 
 .blocmenu--entree {
   -webkit-animation: apparition-menu 3s;
           animation: apparition-menu 3s;
+  height: 270px;
 }
 
 .blocmenu--plat {
@@ -495,6 +496,7 @@ h4 {
   .menu {
     height: 80px;
     width: 30%;
+    margin-bottom: 20px;
   }
   .detailmenu h2 {
     font-size: 25px;
@@ -504,8 +506,6 @@ h4 {
   .detailmenu {
     width: 90%;
     height: 500px;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -518,6 +518,9 @@ h4 {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 400px;
     margin-top: 20px;
   }
   .descriptiontarif {

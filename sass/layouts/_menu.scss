@@ -97,11 +97,12 @@ h4
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 220px;
+    height: 200px;
 
     &--entree
     {
         animation: apparition-menu 3s;
+        height: 270px;
     }
     &--plat
     {
@@ -137,6 +138,7 @@ h4
     padding-left: 10px;
     margin-left: 20px;
 }
+
 .descriptiontarif
 {
     display: flex;
@@ -275,6 +277,7 @@ h4
     {
         height: 80px;
         width: 30%;
+        margin-bottom: 20px;
     }
     .detailmenu h2
     {
@@ -286,7 +289,6 @@ h4
     {
         width: 90%;
         height: 500px;
-        justify-content: space-around;
         align-items: center;
     }
     .blocmenu
@@ -294,6 +296,8 @@ h4
         width: 100%;
         justify-content: space-around;
         flex-direction: row;
+        flex-wrap: wrap;
+        height: 400px;
         margin-top: 20px;
     }
     .descriptiontarif
