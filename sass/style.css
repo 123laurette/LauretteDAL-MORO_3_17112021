@@ -940,13 +940,16 @@ aside {
 }
 
 .coeurrempli {
-  color: transparent;
+  opacity: 0;
 }
 
 .coeurrempli:active {
+  opacity: 1;
   background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), to(#9356DC));
   background: linear-gradient(0deg, #FF79DA, #9356DC);
   background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 /*.....................TABLETTE................*/

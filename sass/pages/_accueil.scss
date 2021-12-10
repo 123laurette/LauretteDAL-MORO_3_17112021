@@ -257,12 +257,15 @@ main
 			}
 			.coeurrempli
 			{
-				color: transparent
+				opacity: 0;
 			}
 			.coeurrempli:active
 			{
+				opacity: 1;
 				background: linear-gradient(0deg, $secondaire, $primaire);
 				background-clip: text;
+				-webkit-background-clip: text;
+				color: transparent;
 			}
 
 
@@ -362,6 +365,7 @@ main
 	{
 		margin-left: 85%;
 	}
+	
 	
 }
 /*..................DESKTOP................................*/
