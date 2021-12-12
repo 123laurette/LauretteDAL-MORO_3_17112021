@@ -48,7 +48,7 @@ footer {
   background-color: #343434;
 }
 
-.logofooter p {
+.logofooter {
   font-family: "shrikhand", impact, serif;
   font-size: 18px;
   color: white;
@@ -113,7 +113,7 @@ footer {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     font-size: 16px;
-    width: 100%;
+    width: 95%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -124,7 +124,7 @@ footer {
     font-size: 18px;
     margin-right: 20px;
   }
-  .logofooter p {
+  .logofooter {
     font-size: 25px;
     text-align: center;
     width: 100%;
@@ -162,7 +162,7 @@ footer {
   height: 50px;
 }
 
-.fleche i {
+.fleche {
   margin-top: 25px;
   margin-left: 20px;
   color: black;
@@ -172,7 +172,7 @@ footer {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  height: 50%;
+  height: 225px;
   margin-top: 20px;
 }
 
@@ -180,8 +180,6 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -190,20 +188,30 @@ footer {
 .titre h1 {
   font-family: "shrikhand", impact, serif;
   font-size: 25px;
-  margin-left: -30px;
+  margin-left: 30px;
 }
 
 .coeur i {
   font-size: 25px;
-  margin-top: -12px;
+  margin-top: -15px;
+  margin-left: 50px;
   position: absolute;
 }
 
-.coeurvide i {
+.coeurvide {
   color: #727171;
 }
 
-.coeurrempli i {
+.coeurrempli {
+  opacity: 0;
+}
+
+.coeurrempli:hover {
+  opacity: 1;
+  background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(0deg, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
 }
 
@@ -224,9 +232,9 @@ footer {
 }
 
 .detailmenu h2 {
-  margin-bottom: 20px;
   font-size: 16px;
   margin-left: 20px;
+  margin-top: 20px;
   border-bottom: solid #99E2D0;
   padding-bottom: 5px;
   margin-bottom: -5px;
@@ -240,6 +248,9 @@ h4 {
   width: 100%;
   margin-top: 10px;
   color: black;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .blocmenu {
@@ -253,7 +264,12 @@ h4 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 220px;
+  height: 250px;
+  margin-top: 20px;
+}
+
+.blocmenu--note {
+  height: 340px;
 }
 
 .blocmenu--entree {
@@ -337,12 +353,14 @@ h4 {
   color: #727171;
   white-space: nowrap;
   width: 100%;
+  height: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .tarif {
   font-weight: 800;
+  margin-right: 8px;
   color: black;
 }
 
@@ -351,8 +369,8 @@ h4 {
   display: -ms-flexbox;
   display: flex;
   color: transparent;
-  -webkit-transform: rotate(0turn) translate(0, 0);
-          transform: rotate(0turn) translate(0, 0);
+  -webkit-transform: rotate(0turn);
+          transform: rotate(0turn);
 }
 
 .menu:hover {
@@ -362,28 +380,35 @@ h4 {
 
 .menu:hover .valide {
   color: white;
+  background-color: #99E2D0;
+  width: 60px;
+  height: 60px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: -32px;
-  margin-left: 20px;
-  height: 61px;
-  padding: 13px;
+  padding: 4px;
+  margin-top: -31.5px;
+  margin-left: 5px;
   border-radius: 0 20px 20px 0;
-  background-color: #99E2D0;
-  -webkit-transition: 2000ms 10s translateX(80px, 0);
-  transition: 2000ms 10s translateX(80px, 0);
+  -webkit-transform: translateX(0, 0);
+          transform: translateX(0, 0);
 }
 
 .menu:hover .valide i {
-  font-size: 20px;
+  font-size: 18px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-transform: rotate(1turn);
           transform: rotate(1turn);
-  -webkit-transition: 900ms;
-  transition: 900ms;
+  -webkit-transition: 500ms;
+  transition: 500ms;
 }
 
 .bouton {
@@ -396,7 +421,7 @@ h4 {
 }
 
 .bouton button {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   padding: 15px 50px;
   border-radius: 40px;
   background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
@@ -419,7 +444,7 @@ h4 {
 
 @media screen and (min-width: 768px) and (max-width: 1293px) {
   .photo_menu img {
-    height: 500px;
+    height: 270px;
   }
   .fleche {
     margin-left: 50px;
@@ -433,10 +458,8 @@ h4 {
         -ms-flex-direction: column;
             flex-direction: column;
     padding-left: 50px;
+    margin-top: -30px;
     padding-right: 40px;
-  }
-  .coeur {
-    margin-right: 60px;
   }
 }
 
@@ -448,11 +471,14 @@ h4 {
   .fleche {
     margin-left: 90px;
   }
+  .logo {
+    margin-right: 100px;
+  }
   .main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 900px;
+    height: 650px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -464,46 +490,52 @@ h4 {
             align-items: center;
   }
   .titre {
-    width: 100%;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    margin-top: 30px;
+    width: 70%;
+    margin-left: -50px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .titre h1 {
     font-size: 30px;
-    margin-bottom: 20px;
   }
   .coeur i {
     font-size: 30px;
-    margin-top: -35px;
   }
   .menu {
-    height: auto;
-    width: 30%;
+    height: 70px;
+    width: 100%;
+    margin: 0;
   }
   .detailmenu h2 {
     font-size: 25px;
-    margin-left: -80%;
+    height: 40px;
+    width: 4%;
     margin-top: 20px;
+    margin-left: 50px;
+    border-bottom: solid #99E2D0;
   }
   .detailmenu {
-    width: 90%;
-    height: 550px;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .blocmenu {
     width: 100%;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    height: 700px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    margin-top: 20px;
+    margin: 0%;
+    padding: 0;
+  }
+  .blocmenu {
+    height: 330px;
+    width: 50%;
+    margin-top: 80px;
+    margin-left: -80px;
+    margin-right: 50px;
+    padding: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .descriptiontarif {
     height: 70px;
@@ -511,28 +543,25 @@ h4 {
   h4 {
     font-size: 20px;
     margin-left: 20px;
-    margin-top: 20px;
+    margin-top: 10px;
   }
   .description_menu {
     font-size: 18px;
     margin-left: 20px;
-    margin-top: 10px;
+    margin-top: 0px;
   }
   .tarif {
     font-size: 20px;
     margin-right: 20px;
+    margin-top: -15px;
   }
   .menu:hover .valide {
-    margin-top: -46px;
-    height: 117px;
-    padding: 20px;
+    height: 70px;
+    margin-top: -36.5px;
   }
   .bouton button {
-    width: 400px;
-    margin-top: 30px;
-  }
-  .bouton a button {
-    font-size: 22px;
+    width: 300px;
+    margin-top: 50px;
   }
 }
 /*# sourceMappingURL=style-menu.css.map */
