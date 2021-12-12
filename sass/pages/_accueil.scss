@@ -98,14 +98,14 @@ main
 		margin-bottom: 10px;
 		justify-content: space-around;
 	}
-	.fonctionnement_bouton
-	{
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		width: 100%;
-		height: 250px;
-	}
+		.fonctionnement_bouton
+		{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			width: 100%;
+			height: 250px;
+		}
 		h2
 		{
 			@include fontbold;
@@ -113,57 +113,57 @@ main
 			font-size: 25px;
 			margin-left: 25px;
 		}
-		.choix
+	.choix
+	{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		border-radius: 25px;
+		margin-top: -20px;
+		margin-left: 30px;
+		font-size: 16px;
+		font-weight: 900;
+		height: 70px;
+		width: 88%;
+		box-shadow: ($texte +110%) 0px 6px 15px;
+		background: $cadre;
+	}
+		.choix:hover
+		{
+			background-color: #dfccf5;
+			border-radius: 25px;
+			filter: brightness(1.02);
+			box-shadow: grey 0px 6px 10px;
+		}
+		.num
 		{
 			display: flex;
-			flex-direction: row;
 			justify-content: center;
 			align-items: center;
-			border-radius: 25px;
-			margin-top: -20px;
-			margin-left: 30px;
-			font-size: 16px;
-			font-weight: 900;
-			height: 70px;
-			width: 88%;
-			box-shadow: ($texte +110%) 0px 6px 15px;
-			background: $cadre;
+			border-radius: 50%;
+			background-color: $primaire;
+			color: white;
+			font-size: 15px;
+			width: 35px;
+			height: 28px;
+			margin-left: -13px;
 		}
-			.choix:hover
-			{
-				background-color: #dfccf5;
-				border-radius: 25px;
-				filter: brightness(1.02);
-				box-shadow: grey 0px 6px 10px;
-			}
-			.num
-			{
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				border-radius: 50%;
-				background-color: $primaire;
-				color: white;
-				font-size: 15px;
-				width: 35px;
-				height: 28px;
-				margin-left: -13px;
-			}
-			.choix i
-			{
-				margin-left: 20px;
-				margin-right: 20px;
-				color: $texte +50%;
-				font-size: 20px;
-			}
-			.choix h4
-			{
-				margin-bottom: 10px;
-			}
-			.choix:hover i 
-			{
-				color: $primaire;
-			}
+		.choix i
+		{
+			margin-left: 20px;
+			margin-right: 20px;
+			color: $texte +50%;
+			font-size: 20px;
+		}
+		.choix h4
+		{
+			margin-bottom: 10px;
+		}
+		.choix:hover i 
+		{
+			color: $primaire;
+		}
 			
 /*...........2eme section............*/
 #restaurants

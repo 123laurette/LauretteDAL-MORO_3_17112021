@@ -33,35 +33,35 @@
     align-items: center;
 
 }
-.titre h1
-{
-    font-family: "shrikhand", impact, serif; 
-    font-size: 25px;
-    margin-left: 30px;
-}
-.coeur i
-{
-    font-size: 25px;
-    margin-top: -15px;
-    margin-left: 50px;
-    position: absolute;
-}
-.coeurvide
-{
-    color: $texte;
-}
-.coeurrempli
-{
-	opacity: 0;
-}
-.coeurrempli:hover
-{
-	opacity: 1;
-	background: linear-gradient(0deg, $secondaire, $primaire);
-	background-clip: text;
-	-webkit-background-clip: text;
-	color: transparent;
-}
+    .titre h1
+    {
+        font-family: "shrikhand", impact, serif; 
+        font-size: 25px;
+        margin-left: 30px;
+    }
+    .coeur i
+    {
+        font-size: 25px;
+        margin-top: -15px;
+        margin-left: 50px;
+        position: absolute;
+    }
+        .coeurvide
+        {
+            color: $texte;
+        }
+        .coeurrempli
+        {
+            opacity: 0;
+        }
+        .coeurrempli:hover
+        {
+            opacity: 1;
+            background: linear-gradient(0deg, $secondaire, $primaire);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
 .detailmenu
 {
     display: flex;
@@ -71,53 +71,52 @@
     margin-bottom: 50px;
     justify-content: space-between;
 }
-.detailmenu h2
-{
-    font-size: 16px;
-    margin-left: 20px;
-    margin-top: 20px;
-    border-bottom: solid $tertiaire;
-    padding-bottom: 5px;
-    margin-bottom: -5px;
-    width: 45px;
-    color: $texte;
-}
-h4
-{
-    font-size: 16px;
-    font-weight: 800;
-    width: 100%;
-    margin-top: 10px;
-    color: black;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-.blocmenu
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 250px;
-    margin-top: 20px;
+    .detailmenu h2
+    {
+        font-size: 16px;
+        margin-left: 20px;
+        margin-top: 20px;
+        border-bottom: solid $tertiaire;
+        padding-bottom: 5px;
+        margin-bottom: -5px;
+        width: 45px;
+        color: $texte;
+    }
+    h4
+    {
+        font-size: 16px;
+        font-weight: 800;
+        width: 100%;
+        margin-top: 10px;
+        color: black;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .blocmenu
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 250px;
+        margin-top: 20px;
 
-    &--note
-    {
-        height: 340px;
-    }
-    &--entree
-    {
-        animation: apparition-menu 3s;
-    }
-    &--plat
-    {
-        animation: apparition-menu 7s;
-    }
-    &--dessert
-    {
-        animation: apparition-menu 11s;
-    }
-    
+        &--note
+        {
+            height: 340px;
+        }
+        &--entree
+        {
+            animation: apparition-menu 3s;
+        }
+        &--plat
+        {
+            animation: apparition-menu 7s;
+        }
+        &--dessert
+        {
+            animation: apparition-menu 11s;
+        }
 }
 @keyframes apparition-menu{
     0%{
@@ -143,88 +142,87 @@ h4
     padding-left: 10px;
     margin-left: 20px;
 }
-
-.descriptiontarif
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-size: 14px;
-    width: 100%;
-    height: 35px;
-}
-.description_menu
-{
-    color: $texte;
-    white-space: nowrap;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-.tarif
-{
-    font-weight: 800;
-    margin-right: 8px;
-    color: black;
-}
-.valide
-{
-    display: flex;
-    color: transparent;
-    transform: rotate(0turn);
-}
-.menu:hover
-{
-    box-shadow: grey 6px 6px 6px;
-
+    .descriptiontarif
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 14px;
+        width: 100%;
+        height: 35px;
+    }
+    .description_menu
+    {
+        color: $texte;
+        white-space: nowrap;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .tarif
+    {
+        font-weight: 800;
+        margin-right: 8px;
+        color: black;
+    }
     .valide
     {
-    color: white;
-    background-color: $tertiaire;
-    width: 60px;
-    height: 60px;
-    align-items: center;
-    justify-content: center;
-    padding: 4px;
-    margin-top: -31.5px;
-    margin-left: 5px;
-    border-radius: 0 20px 20px 0;
-    transform: translateX(0, 0);
+        display: flex;
+        color: transparent;
+        transform: rotate(0turn);
     }
-    .valide i
+    .menu:hover
     {
-        font-size: 18px;
-        align-items: center;
-        justify-content: center;
-    transform: rotate(1turn);
-    transition: 500ms;
+        box-shadow: grey 6px 6px 6px;
+
+        .valide
+        {
+            color: white;
+            background-color: $tertiaire;
+            width: 60px;
+            height: 60px;
+            align-items: center;
+            justify-content: center;
+            padding: 4px;
+            margin-top: -31.5px;
+            margin-left: 5px;
+            border-radius: 0 20px 20px 0;
+            transform: translateX(0, 0);
+        }
+        .valide i
+        {
+            font-size: 18px;
+            align-items: center;
+            justify-content: center;
+            transform: rotate(1turn);
+            transition: 500ms;
+        }
     }
-}
 .bouton
 {
     display: flex;
     justify-content: center;
 }
-.bouton button
-{
-	margin-bottom: 40px;
-	padding: 15px 50px;
-	border-radius: 40px;
-	background: $degrade;
-	border: none;
-}
-.bouton a button
-{
-	text-decoration: none;
-	color: white;
-	font-size: 16px;
-}
-.bouton a button:hover
-{
-	box-shadow: $texte 0px 7px 15px;
-	filter: brightness(1.1);
-}
+    .bouton button
+    {
+        margin-bottom: 40px;
+        padding: 15px 50px;
+        border-radius: 40px;
+        background: $degrade;
+        border: none;
+    }
+    .bouton a button
+    {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+    }
+    .bouton a button:hover
+    {
+        box-shadow: $texte 0px 7px 15px;
+        filter: brightness(1.1);
+    }
 @media screen and (min-width: 768px)and (max-width: 1293px) 
 {
     .photo_menu img
