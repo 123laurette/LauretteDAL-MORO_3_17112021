@@ -129,7 +129,7 @@ main
 			box-shadow: ($texte +110%) 0px 6px 15px;
 			background: $cadre;
 		}
-			.choix:active
+			.choix:hover
 			{
 				background-color: #dfccf5;
 				border-radius: 25px;
@@ -160,7 +160,7 @@ main
 			{
 				margin-bottom: 10px;
 			}
-			.choix:active i 
+			.choix:hover i 
 			{
 				color: $primaire;
 			}
@@ -317,7 +317,7 @@ main
 	.choix
 	{
 		width: 80%;
-		margin-left: 100px;
+		margin-left: 80px;
 	}
 	.choix i
 	{
@@ -340,7 +340,7 @@ main
 	.carte
 	{
 		width: 90%;
-		margin-left: 15px;
+		margin-left: 40px;
 		padding: 0;
 	
 	}

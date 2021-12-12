@@ -67,7 +67,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 20px;
-    height: 900px;
+    height:900px;
     margin-bottom: 50px;
     justify-content: space-between;
 }
@@ -75,6 +75,7 @@
 {
     font-size: 16px;
     margin-left: 20px;
+    margin-top: 20px;
     border-bottom: solid $tertiaire;
     padding-bottom: 5px;
     margin-bottom: -5px;
@@ -97,12 +98,16 @@ h4
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 200px;
+    height: 250px;
+    margin-top: 20px;
 
+    &--note
+    {
+        height: 340px;
+    }
     &--entree
     {
         animation: apparition-menu 3s;
-        height: 270px;
     }
     &--plat
     {
@@ -203,7 +208,7 @@ h4
 }
 .bouton button
 {
-	margin-bottom: 50px;
+	margin-bottom: 40px;
 	padding: 15px 50px;
 	border-radius: 40px;
 	background: $degrade;
@@ -215,7 +220,7 @@ h4
 	color: white;
 	font-size: 16px;
 }
-.bouton a button:active
+.bouton a button:hover
 {
 	box-shadow: $texte 0px 7px 15px;
 	filter: brightness(1.1);
@@ -250,10 +255,14 @@ h4
     {
         margin-left: 90px;
     }
+    .logo
+    {
+        margin-right: 100px;
+    }
     .main
     {
         display: flex;
-        height: 900px;
+        height: 650px;
         flex-direction: column;
         margin-top: -10px;
         border-radius: 0%;
@@ -262,8 +271,8 @@ h4
     .titre
     {
         width: 70%;
-        justify-content: space-around;
-        margin-top: 20px;
+        margin-left: -50px;
+        justify-content: center;
     }
     .titre h1
     {
@@ -275,30 +284,36 @@ h4
     }
     .menu
     {
-        height: 80px;
-        width: 30%;
-        margin-bottom: 20px;
+        height: 70px;
+        width: 100%;
+        margin: 0;
     }
     .detailmenu h2
     {
         font-size: 25px;
-        margin-left: -80%;
+        height: 40px;
+        width: 4%;
         margin-top: 20px;
+        margin-left: 50px;
+        border-bottom: solid $tertiaire;
     }
     .detailmenu
     {
-        width: 90%;
-        height: 500px;
-        align-items: center;
+        width: 100%;
+        height: 700px;
+        flex-direction: row;
+        margin: 0%;
+        padding: 0;
     }
     .blocmenu
     {
-        width: 100%;
-        justify-content: space-around;
-        flex-direction: row;
-        flex-wrap: wrap;
-        height: 400px;
-        margin-top: 20px;
+        height: 330px;
+        width: 50%;
+        margin-top: 80px;
+        margin-left: -80px;
+        margin-right: 50px;
+        padding: 0;
+        flex-direction: column;
     }
     .descriptiontarif
     {
@@ -315,24 +330,25 @@ h4
     {
         font-size: 18px;
         margin-left: 20px;
-        margin-top: 10px;
+        margin-top: 0px;
     }
     .tarif
     {
         font-size: 20px;
         margin-right: 20px;
+        margin-top: -15px;
     }
-.menu:hover
-{
-    .valide
+    .menu:hover
     {
-        height: 80px;
-        margin-top: -36px;
+        .valide
+        {
+            height: 70px;
+            margin-top: -36.5px;
+        }
     }
-}
-.bouton button
-{
-    width: 300px;
-    margin-top: 100px;
-}
+    .bouton button
+    {
+        width: 300px;
+        margin-top: 50px;
+    }
 }

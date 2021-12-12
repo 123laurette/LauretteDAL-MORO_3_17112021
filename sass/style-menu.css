@@ -234,6 +234,7 @@ footer {
 .detailmenu h2 {
   font-size: 16px;
   margin-left: 20px;
+  margin-top: 20px;
   border-bottom: solid #99E2D0;
   padding-bottom: 5px;
   margin-bottom: -5px;
@@ -263,13 +264,17 @@ h4 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 200px;
+  height: 250px;
+  margin-top: 20px;
+}
+
+.blocmenu--note {
+  height: 340px;
 }
 
 .blocmenu--entree {
   -webkit-animation: apparition-menu 3s;
           animation: apparition-menu 3s;
-  height: 270px;
 }
 
 .blocmenu--plat {
@@ -416,7 +421,7 @@ h4 {
 }
 
 .bouton button {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   padding: 15px 50px;
   border-radius: 40px;
   background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
@@ -430,7 +435,7 @@ h4 {
   font-size: 16px;
 }
 
-.bouton a button:active {
+.bouton a button:hover {
   -webkit-box-shadow: #727171 0px 7px 15px;
           box-shadow: #727171 0px 7px 15px;
   -webkit-filter: brightness(1.1);
@@ -466,11 +471,14 @@ h4 {
   .fleche {
     margin-left: 90px;
   }
+  .logo {
+    margin-right: 100px;
+  }
   .main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 900px;
+    height: 650px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -483,9 +491,10 @@ h4 {
   }
   .titre {
     width: 70%;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    margin-top: 20px;
+    margin-left: -50px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .titre h1 {
     font-size: 30px;
@@ -494,34 +503,39 @@ h4 {
     font-size: 30px;
   }
   .menu {
-    height: 80px;
-    width: 30%;
-    margin-bottom: 20px;
+    height: 70px;
+    width: 100%;
+    margin: 0;
   }
   .detailmenu h2 {
     font-size: 25px;
-    margin-left: -80%;
+    height: 40px;
+    width: 4%;
     margin-top: 20px;
+    margin-left: 50px;
+    border-bottom: solid #99E2D0;
   }
   .detailmenu {
-    width: 90%;
-    height: 500px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .blocmenu {
     width: 100%;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    height: 700px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    height: 400px;
-    margin-top: 20px;
+    margin: 0%;
+    padding: 0;
+  }
+  .blocmenu {
+    height: 330px;
+    width: 50%;
+    margin-top: 80px;
+    margin-left: -80px;
+    margin-right: 50px;
+    padding: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .descriptiontarif {
     height: 70px;
@@ -534,19 +548,20 @@ h4 {
   .description_menu {
     font-size: 18px;
     margin-left: 20px;
-    margin-top: 10px;
+    margin-top: 0px;
   }
   .tarif {
     font-size: 20px;
     margin-right: 20px;
+    margin-top: -15px;
   }
   .menu:hover .valide {
-    height: 80px;
-    margin-top: -36px;
+    height: 70px;
+    margin-top: -36.5px;
   }
   .bouton button {
     width: 300px;
-    margin-top: 100px;
+    margin-top: 50px;
   }
 }
 /*# sourceMappingURL=style-menu.css.map */
