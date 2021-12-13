@@ -11,8 +11,7 @@
 
 @font-face {
   font-family: "shrikhand";
-  src: url("fonts/shrikhand-Regular.otf") format("opentype");
-  font-weight: normal;
+  src: url("fonts/shrikhand-regular.otf") format("opentype");
 }
 
 * {
