@@ -9,11 +9,6 @@
   src: url("fonts/Roboto-Bold-webfont.ttf") format("truetype");
 }
 
-@font-face {
-  font-family: "shrikhand";
-  src: url("fonts/shrikhand-regular.otf") format("opentype");
-}
-
 * {
   padding: 0;
   margin: 0;
@@ -48,7 +43,7 @@ footer {
 }
 
 .logofooter {
-  font-family: "shrikhand", impact, serif;
+  font-family: 'Shrikhand', impact, serif;
   font-size: 18px;
   color: white;
   width: 35%;
@@ -185,7 +180,7 @@ footer {
 }
 
 .titre h1 {
-  font-family: "shrikhand", impact, serif;
+  font-family: 'Shrikhand', impact, serif;
   font-size: 25px;
   margin-left: 30px;
 }
