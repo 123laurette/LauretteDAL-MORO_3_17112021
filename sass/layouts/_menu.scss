@@ -178,7 +178,6 @@
     {
         display: flex;
         color: transparent;
-
         transform: rotate(0turn);
     }
     .menu:hover
@@ -204,10 +203,6 @@
             justify-content: center;
             transform: rotate(1turn);
             transition: 500ms;
-        }
-        .tarif
-        {
-            transform: translate(0);
         }
     }
 .bouton

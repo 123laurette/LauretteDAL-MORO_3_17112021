@@ -412,11 +412,6 @@ h4 {
   transition: 500ms;
 }
 
-.menu:hover .tarif {
-  -webkit-transform: translate(0);
-          transform: translate(0);
-}
-
 .bouton {
   display: -webkit-box;
   display: -ms-flexbox;
