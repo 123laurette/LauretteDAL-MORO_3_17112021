@@ -194,19 +194,24 @@ footer {
 
 .coeurvide {
   color: #727171;
+  opacity: 1;
 }
 
 .coeurrempli {
   opacity: 0;
 }
 
-.coeurrempli:hover {
+.coeur:hover .coeurrempli {
   opacity: 1;
   background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), to(#9356DC));
   background: linear-gradient(0deg, #FF79DA, #9356DC);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+}
+
+.coeur:hover .coeurvide {
+  opacity: 0;
 }
 
 .detailmenu {
@@ -371,9 +376,10 @@ h4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   color: transparent;
-  -webkit-transform: rotate(0turn);
-          transform: rotate(0turn);
+  -webkit-transform: rotate(0turn) translate(0px);
+          transform: rotate(0turn) translate(0px);
 }
 
 .menu:hover {
@@ -410,6 +416,10 @@ h4 {
           transform: rotate(1turn);
   -webkit-transition: 500ms;
   transition: 500ms;
+}
+
+.menu:hover .tarif {
+  margin-right: 60px;
 }
 
 .bouton {
@@ -502,6 +512,7 @@ h4 {
   }
   .coeur i {
     font-size: 30px;
+    padding: 2px;
   }
   .menu {
     height: 70px;
@@ -554,15 +565,17 @@ h4 {
   .tarif {
     font-size: 20px;
     margin-right: 20px;
-    margin-top: -15px;
   }
   .menu:hover .valide {
     height: 70px;
-    margin-top: -36.5px;
   }
   .bouton button {
     width: 300px;
+    font-size: 20px;
     margin-top: 50px;
+  }
+  .bouton a button {
+    font-size: 20px;
   }
 }
 /*# sourceMappingURL=style-menu.css.map */

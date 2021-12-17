@@ -49,18 +49,26 @@
         .coeurvide
         {
             color: $texte;
+            opacity: 1;
         }
         .coeurrempli
         {
             opacity: 0;
         }
-        .coeurrempli:hover
+        .coeur:hover
         {
+            .coeurrempli
+            {
             opacity: 1;
             background: linear-gradient(0deg, $secondaire, $primaire);
             background-clip: text;
             -webkit-background-clip: text;
             color: transparent;
+            }
+            .coeurvide
+            {
+            opacity: 0;
+            }
         }
 .detailmenu
 {
@@ -173,12 +181,16 @@
         font-weight: 800;
         margin-right: 15px;
         color: black;
+        
     }
     .valide
     {
         display: flex;
+        width: 100%;
         color: transparent;
-        transform: rotate(0turn);
+        transform: rotate(0turn) translate(0px);
+        
+        ;
     }
     .menu:hover
     {
@@ -203,6 +215,10 @@
             justify-content: center;
             transform: rotate(1turn);
             transition: 500ms;
+        }
+        .tarif
+        {
+            margin-right: 60px;
         }
     }
 .bouton
@@ -285,6 +301,7 @@
     .coeur i
     {
         font-size: 30px;
+        padding: 2px;
     }
     .menu
     {
@@ -340,19 +357,22 @@
     {
         font-size: 20px;
         margin-right: 20px;
-        margin-top: -15px;
     }
     .menu:hover
     {
         .valide
         {
             height: 70px;
-            margin-top: -36.5px;
         }
     }
     .bouton button
     {
         width: 300px;
+        font-size: 20px;
         margin-top: 50px;
+    }
+    .bouton a button
+    {
+        font-size: 20px;
     }
 }

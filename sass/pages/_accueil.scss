@@ -254,13 +254,20 @@ main
 			{
 				opacity: 0;
 			}
-			.coeurrempli:hover
+			.coeur:hover
 			{
+				.coeurrempli
+				{
 				opacity: 1;
 				background: linear-gradient(0deg, $secondaire, $primaire);
 				background-clip: text;
 				-webkit-background-clip: text;
 				color: transparent;
+				}
+				.coeurvide
+				{
+				opacity: 0;
+				}
 			}
 			h3
 			{
