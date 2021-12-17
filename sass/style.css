@@ -318,18 +318,11 @@ footer {
 }
 
 .totaldescription {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 100%;
   height: 100%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
-.totaldescription h4 {
+h4 {
   font-size: 16px;
   font-weight: 800;
   width: 100%;
@@ -351,27 +344,27 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-size: 16px;
+  font-size: 14px;
   width: 100%;
-  height: 35px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .description_menu {
   color: #727171;
-  white-space: nowrap;
-  height: 100%;
-  width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .tarif {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-weight: 800;
-  margin-right: 8px;
-  width: 50px;
+  margin-right: 15px;
   color: black;
-  overflow: hidden;
-  white-space: nowrap;
 }
 
 .valide {
@@ -379,8 +372,8 @@ footer {
   display: -ms-flexbox;
   display: flex;
   color: transparent;
-  -webkit-transform: rotate(0turn) translate(0);
-          transform: rotate(0turn) translate(0);
+  -webkit-transform: rotate(0turn);
+          transform: rotate(0turn);
 }
 
 .menu:hover {
@@ -403,8 +396,6 @@ footer {
   border-radius: 0 20px 20px 0;
   -webkit-transform: translate(-50px, 0);
           transform: translate(-50px, 0);
-  -webkit-transition-duration: 500ms;
-          transition-duration: 500ms;
 }
 
 .menu:hover .valide i {
@@ -419,6 +410,11 @@ footer {
           transform: rotate(1turn);
   -webkit-transition: 500ms;
   transition: 500ms;
+}
+
+.menu:hover .tarif {
+  -webkit-transform: translate(0);
+          transform: translate(0);
 }
 
 .bouton {

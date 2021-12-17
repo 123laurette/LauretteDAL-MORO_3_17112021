@@ -135,12 +135,10 @@
 }
     .totaldescription
     {
-        display: flex;
         width: 100%;
         height: 100%;
-        flex-direction: column;
     }
-    .totaldescription h4
+    h4
     {
         font-size: 16px;
         font-weight: 800;
@@ -156,33 +154,32 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        font-size: 16px;
+        font-size: 14px;
         width: 100%;
-        height: 35px; 
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
     .description_menu
     {
         color: $texte;
-        white-space: nowrap;
-        height: 100%;
-        width: 100%;
         overflow: hidden;
         text-overflow: ellipsis;
+        white-space: nowrap;
     }
     .tarif
     {
+        display: flex;
         font-weight: 800;
-        margin-right: 8px;
-        width: 50px;
+        margin-right: 15px;
         color: black;
-        overflow: hidden;
-        white-space: nowrap;
     }
     .valide
     {
         display: flex;
         color: transparent;
-        transform: rotate(0turn) translate(0);
+
+        transform: rotate(0turn);
     }
     .menu:hover
     {
@@ -199,7 +196,6 @@
             padding: 4px;
             border-radius: 0 20px 20px 0;
             transform: translate(-50px, 0);
-            transition-duration: 500ms;
         }
         .valide i
         {
@@ -208,6 +204,10 @@
             justify-content: center;
             transform: rotate(1turn);
             transition: 500ms;
+        }
+        .tarif
+        {
+            transform: translate(0);
         }
     }
 .bouton
