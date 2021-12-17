@@ -394,8 +394,8 @@ h4 {
           justify-content: center;
   padding: 4px;
   border-radius: 0 20px 20px 0;
-  -webkit-transform: translate(-50px, 0);
-          transform: translate(-50px, 0);
+  -webkit-transform: translate(-49px, 0);
+          transform: translate(-49px, 0);
 }
 
 .menu:hover .valide i {
