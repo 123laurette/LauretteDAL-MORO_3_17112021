@@ -414,8 +414,8 @@ h4 {
           justify-content: center;
   -webkit-transform: rotate(1turn);
           transform: rotate(1turn);
-  -webkit-transition: 500ms;
-  transition: 500ms;
+  -webkit-transition: 1000ms;
+  transition: 1000ms;
 }
 
 .menu:hover .tarif {
