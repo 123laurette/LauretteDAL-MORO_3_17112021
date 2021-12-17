@@ -82,22 +82,13 @@
         width: 45px;
         color: $texte;
     }
-    h4
-    {
-        font-size: 16px;
-        font-weight: 800;
-        width: 100%;
-        margin-top: 10px;
-        color: black;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-    }
+   
     .blocmenu
     {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        width: 95%;
         height: 250px;
         margin-top: 20px;
 
@@ -134,14 +125,32 @@
     display: flex;
     background-color: white;
     border-radius: 20px;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    width: 90%;
+    width: 95%;
     height: 60px;
     justify-content: space-around;
     padding-left: 10px;
     margin-left: 20px;
 }
+    .totaldescription
+    {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+    .totaldescription h4
+    {
+        font-size: 16px;
+        font-weight: 800;
+        width: 100%;
+        margin-top: 10px;
+        color: black;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
     .descriptiontarif
     {
         display: flex;
@@ -149,14 +158,14 @@
         justify-content: space-between;
         font-size: 16px;
         width: 100%;
-        height: 35px;
+        height: 35px; 
     }
     .description_menu
     {
         color: $texte;
         white-space: nowrap;
-        width: 100%;
         height: 100%;
+        width: 100%;
         overflow: hidden;
         text-overflow: ellipsis;
     }
@@ -164,13 +173,16 @@
     {
         font-weight: 800;
         margin-right: 8px;
+        width: 50px;
         color: black;
+        overflow: hidden;
+        white-space: nowrap;
     }
     .valide
     {
         display: flex;
         color: transparent;
-        transform: rotate(0turn);
+        transform: rotate(0turn) translate(0);
     }
     .menu:hover
     {
@@ -180,15 +192,14 @@
         {
             color: white;
             background-color: $tertiaire;
-            width: 60px;
+            width: 50px;
             height: 60px;
             align-items: center;
             justify-content: center;
             padding: 4px;
-            margin-top: -31.5px;
-            margin-left: 5px;
             border-radius: 0 20px 20px 0;
-            transform: translateX(0, 0);
+            transform: translate(-50px, 0);
+            transition-duration: 500ms;
         }
         .valide i
         {
