@@ -376,7 +376,7 @@ h4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  width: auto;
   color: transparent;
   -webkit-transform: rotate(0turn) translate(0px);
           transform: rotate(0turn) translate(0px);
