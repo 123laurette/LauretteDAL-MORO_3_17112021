@@ -183,14 +183,15 @@
         color: black;
         
     }
+    @keyframes check{
+        0%{}
+    }
     .valide
     {
         display: flex;
         width: auto;
         color: transparent;
         transform: rotate(0turn) translate(0px);
-        
-        ;
     }
     .menu:hover
     {
