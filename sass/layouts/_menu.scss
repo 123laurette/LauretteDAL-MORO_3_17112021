@@ -183,9 +183,6 @@
         color: black;
         
     }
-    @keyframes check{
-        0%{}
-    }
     .valide
     {
         display: flex;
@@ -350,13 +347,13 @@
     
     .description_menu
     {
-        font-size: 18px;
+        font-size: 16px;
         margin-left: 20px;
         margin-top: 0px;
     }
     .tarif
     {
-        font-size: 20px;
+        font-size: 16px;
         margin-right: 20px;
     }
     .menu:hover

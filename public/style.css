@@ -372,6 +372,16 @@ h4 {
   color: black;
 }
 
+@-webkit-keyframes check {
+  0% {
+  }
+}
+
+@keyframes check {
+  0% {
+  }
+}
+
 .valide {
   display: -webkit-box;
   display: -ms-flexbox;
