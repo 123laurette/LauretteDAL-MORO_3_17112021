@@ -1,14 +1,3 @@
-@font-face {
-  font-family: "Robotoreg";
-  src: url("fonts/Roboto-Regular-webfont.ttf") format("truetype"), url("fonts/Roboto-Black-webfont.ttf") format("truetype");
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "Robotobold";
-  src: url("fonts/Roboto-Bold-webfont.ttf") format("truetype");
-}
-
 * {
   padding: 0;
   margin: 0;
@@ -372,16 +361,6 @@ h4 {
   color: black;
 }
 
-@-webkit-keyframes check {
-  0% {
-  }
-}
-
-@keyframes check {
-  0% {
-  }
-}
-
 .valide {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -568,12 +547,12 @@ h4 {
     margin-top: 10px;
   }
   .description_menu {
-    font-size: 18px;
+    font-size: 16px;
     margin-left: 20px;
     margin-top: 0px;
   }
   .tarif {
-    font-size: 20px;
+    font-size: 16px;
     margin-right: 20px;
   }
   .menu:hover .valide {
@@ -687,6 +666,7 @@ h1 {
   margin-left: 40px;
   margin-right: 40px;
   font-size: 25px;
+  font-family: "Roboto", cursive;
 }
 
 h1 + p {
@@ -752,6 +732,7 @@ h2 {
   width: 100%;
   font-size: 25px;
   margin-left: 25px;
+  font-family: "Roboto", cursive;
 }
 
 .choix {
