@@ -666,6 +666,7 @@ h1 {
   margin-left: 40px;
   margin-right: 40px;
   font-size: 25px;
+  font-family: "Roboto", cursive;
 }
 
 h1 + p {
@@ -731,6 +732,7 @@ h2 {
   width: 100%;
   font-size: 25px;
   margin-left: 25px;
+  font-family: "Roboto", cursive;
 }
 
 .choix {
